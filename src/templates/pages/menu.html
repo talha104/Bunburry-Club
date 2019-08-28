@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block menu %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+{% endblock %}
+
+
+{% block menus %}
+
+<div class='container'>
+
+	<div class='red'>
+	</div>
+
+	<div class='bar'>
+		<ul>
+			<li><a href="">Breakfast</a></li>
+			<li><a href="">Nitrogen Ice Cream</a></li>
+			<li><a href="">Live Cheese</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="container">
+	<h1 class="title">Menu</h1>
+
+	<div class="card">
+
+		<img src="{% static 'images/menu1.jpg' %}" class='menu1'>
+
+		<img src="{% static 'images/menu2.jpg' %}" class='menu2'>
+
+		<img src="{% static 'images/menu3.jpg' %}" class='menu3'>
+
+		<img src="{% static 'images/menu4.jpg' %}" class='menu4'>
+
+		<img src="{% static 'images/menu5.jpg' %}" class='menu5'>
+
+		<img src="{% static 'images/menu6.jpg' %}" class='menu6'>
+
+	</div>
+</div>
+{% endblock %}

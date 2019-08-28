@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class='container'>
+	<div class='card'>
+		<img src="{% static 'images/cake.jpg' %}" class='cake'>
+
+		<h2>Now taking online orders</h2>
+
+		<p>
+			We feel so blessed to take online orders of our family members which is a proof of their utmost trust on us
+		</p>
+
+		<a href="" class="btn">Learn More</a>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="card1">
+		<img src="{% static 'images/breakfast.jpg' %}" class="breakfast">
+
+		<a href="" class="btn">Learn More</a>
+	</div>
+</div>
+
+<div class='container'>
+	<div class='card2'>
+		
+		<img src="{% static 'images/nitrogen.jpg' %}" class='nitrogen'>
+
+		<h2>Nitrogen Ice Cream</h2>
+
+		<p>
+			For the first in Pakistan's history, introducing the all new 'Nitrogen Ice Cream'
+		</p>
+
+		<a href="" class="btn">Learn More</a>
+
+	</div>
+</div>
+{% endblock %}

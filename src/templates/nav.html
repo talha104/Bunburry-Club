@@ -1,0 +1,20 @@
+{% load static %}
+<div class='container'>
+	<header>
+		<div class='navbar'>
+			<a href="../"><img src="{% static 'images/logos.jpg' %}" class="nav-brand"></a>
+
+			<a href="" class='hide-desktop show-mobile'><img src="{% static 'images/hamburger.jpg' %}" class='menu' id="menu"></a>
+		</div>
+		<nav>
+			<ul class='hide-mobile show-desktop' id="nav">
+				<li class='hide-desktop show-mobile cross'><img src="{% static 'images/cross.svg' %}" id="cross"></li>
+				<li><a href="../menu/" class='first'>Menu</a></li>
+				<li><a href="../story/">Our Story</a></li>
+				<li><a href="../order/">Order Online</a></li>
+				<li><a href="../celebrity/">Celebrity Reviews</a></li>
+				<li><a href="../about/">About</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>

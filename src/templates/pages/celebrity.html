@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block celebrity %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/celebrity.css' %}">
+{% endblock %}
+
+
+{% block celeb %}
+<div class="container">
+	<h1>Celebrity Reviews</h1>
+
+	<div class='card'>
+		<video width="80%" height="auto" controls >
+			<source src="{% static 'videos/rikshaw.mp4' %}" type="video/mp4">
+		</video>
+		<p>American Rikshaw Wala</p>
+	</div>
+
+	<div class='card1'>
+		<video width="80%" height="auto" controls >
+			<source src="{% static 'videos/hamza.mp4' %}" type="video/mp4">
+		</video>
+		<p>Hamza Ali Abbasi & Kashif Abbasi</p>
+	</div>
+
+	<div class='card2'>
+		<video width="80%" height="auto" controls >
+			<source src="{% static 'videos/umair.mp4' %}" type="video/mp4">
+		</video>
+		<p>Umair Jaswal</p>
+	</div>
+
+	<div class='card3'>
+		<video width="80%" height="auto" controls >
+			<source src="{% static 'videos/wawda.mp4' %}" type="video/mp4">
+		</video>
+		<p>Faisal Wawda</p>
+	</div>
+
+	<div class='card4'>
+		<video width="80%" height="auto" controls >
+			<source src="{% static 'videos/faisal.mp4' %}" type="video/mp4">
+		</video>
+		<p>Faisal Qureshi</p>
+	</div>
+
+</div>
+{% endblock %}

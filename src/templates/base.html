@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% block head %}{% endblock %}
+	{% block menu %}{% endblock %}
+	{% block story %}{% endblock %}
+	{% block order %}{% endblock %}
+	{% block celebrity %}{% endblock %}
+	{% block about %}{% endblock %}
+	
+</head>
+<body>
+
+	{% include 'nav.html' %}
+
+	{% block content %}{% endblock %}
+	{% block menus %}{% endblock %}
+	{% block storys %}{% endblock %}
+	{% block orders %}{% endblock %}
+	{% block celeb %}{% endblock %}
+	{% block bout %}{% endblock %}
+
+
+	{% include 'footer.html' %}
+	<script type="text/javascript">
+		var menu  = document.getElementById("menu");
+		var nav   = document.getElementById("nav");
+		var cross = document.getElementById("cross");
+
+		menu.addEventListener('click', function(e) {
+			nav.classList.toggle('hide-mobile');
+			e.preventDefault();
+		});
+
+		cross.addEventListener('click', function(e) {
+			nav.classList.add('hide-mobile');
+			e.preventDefault();
+		});
+	</script>
+</body>
+</html>
